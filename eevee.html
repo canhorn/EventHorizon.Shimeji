@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>EventHorizon.Shimeji - Eevee</title>
+        <link rel="stylesheet" type="text/css" href="css/shimeji.css" />
+        <link rel="stylesheet" type="text/css" href="css/site.css" />
+    </head>
+    <body>
+        <div id="main" class="container">
+            <div id="zbox" class="full"></div>
+        </div>
+
+        <script type="application/javascript" src="js/library.js"></script>
+        <script type="application/javascript" src="js/shimeji.js"></script>
+        <script
+            type="application/javascript"
+            src="js/behaviors/randomSelector.js"
+        ></script>
+        <script
+            type="application/javascript"
+            src="js/actions/standardAction.js"
+        ></script>
+        <script type="application/javascript" src="js/site.js"></script>
+        <script>
+            window.addEventListener('load', function() {
+                var avatar1 = undefined;
+                // Load configuration
+                fetch('characters/eevee/_mascot.json')
+                    .then(response => response.json())
+                    .then(mascot => {
+                        console.log(mascot);
+                        avatar1 = createAvatar(mascot, 500, 500);
+                    });
+            });
+        </script>
+    </body>
+</html>

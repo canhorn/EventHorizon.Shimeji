@@ -1,0 +1,434 @@
+{
+    "name": "Hinata",
+    "license": "unknown",
+    "baseUrl": "characters/hinata/",
+    "actions": {
+        "sleep": [
+            {
+                "src": "frame21.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 0
+                },
+                "duration": 2500
+            }
+        ],
+        "stand": [
+            {
+                "src": "frame1.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 0
+                },
+                "duration": 250
+            }
+        ],
+        "walk": [
+            {
+                "src": "frame1.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": -20,
+                    "y": 0
+                },
+                "duration": 300
+            },
+            {
+                "src": "frame2.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": -20,
+                    "y": 0
+                },
+                "duration": 300
+            },
+            {
+                "src": "frame1.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": -20,
+                    "y": 0
+                },
+                "duration": 300
+            },
+            {
+                "src": "frame3.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": -20,
+                    "y": 0
+                },
+                "duration": 300
+            }
+        ],
+        "shift": [
+            {
+                "src": "frame25.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 0
+                },
+                "duration": 800
+            },
+            {
+                "src": "frame25.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": -10,
+                    "y": 0
+                },
+                "duration": 200
+            },
+            {
+                "src": "frame23.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": -10,
+                    "y": 0
+                },
+                "duration": 200
+            },
+            {
+                "src": "frame24.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": -10,
+                    "y": 0
+                },
+                "duration": 200
+            },
+            {
+                "src": "frame24.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 0
+                },
+                "duration": 800
+            },
+            {
+                "src": "frame24.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": -20,
+                    "y": 0
+                },
+                "duration": 200
+            },
+            {
+                "src": "frame23.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": -20,
+                    "y": 0
+                },
+                "duration": 200
+            },
+            {
+                "src": "frame25.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": -20,
+                    "y": 0
+                },
+                "duration": 200
+            }
+        ],
+        "jump": [
+            {
+                "src": "frame22.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 0
+                },
+                "duration": 200
+            }
+        ],
+        "fall": [
+            {
+                "src": "frame4.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 40
+                },
+                "duration": 100
+            }
+        ],
+        "land": [
+            {
+                "src": "frame18.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 0
+                },
+                "duration": 200
+            },
+            {
+                "src": "frame19.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 0
+                },
+                "duration": 200
+            }
+        ],
+        "climb": [
+            {
+                "src": "frame14.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 0
+                },
+                "duration": 800
+            },
+            {
+                "src": "frame14.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": -10
+                },
+                "duration": 200
+            },
+            {
+                "src": "frame12.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": -10
+                },
+                "duration": 200
+            },
+            {
+                "src": "frame13.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": -10
+                },
+                "duration": 200
+            },
+            {
+                "src": "frame13.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 0
+                },
+                "duration": 800
+            },
+            {
+                "src": "frame13.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": -20
+                },
+                "duration": 200
+            },
+            {
+                "src": "frame12.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": -20
+                },
+                "duration": 200
+            },
+            {
+                "src": "frame14.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": -20
+                },
+                "duration": 200
+            }
+        ],
+        "action1": [
+            {
+                "src": "frame42.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 0
+                },
+                "duration": 500
+            },
+            {
+                "src": "frame20.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 0
+                },
+                "duration": 500
+            },
+            {
+                "src": "frame32.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 0
+                },
+                "duration": 1000
+            },
+            {
+                "src": "frame31.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 0
+                },
+                "duration": 500
+            },
+            {
+                "src": "frame33.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 0
+                },
+                "duration": 500
+            },
+            {
+                "src": "frame32.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 0
+                },
+                "duration": 500
+            },
+            {
+                "src": "frame33.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 0
+                },
+                "duration": 500
+            },
+            {
+                "src": "frame31.png",
+                "anchor": [
+                    64,
+                    128
+                ],
+                "move": {
+                    "x": 0,
+                    "y": 0
+                },
+                "duration": 500
+            }
+        ]
+    },
+    "behavior": {}
+}

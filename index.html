@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>EventHorizon.Shimeji</title>
+        <link rel="stylesheet" type="text/css" href="css/shimeji.css" />
+        <link rel="stylesheet" type="text/css" href="css/site.css" />
+    </head>
+    <body>
+        <div id="main" class="container">
+            <h1>EventHorizon Shimeji Library Demo</h1>
+            <div id="zbox" class="home">
+                <div class="actor-controls-box">
+                    <div>
+                        <p>Actor 1</p>
+                        <div class="btn" id="button-1-reset">Reset</div>
+                        <div class="btn" id="button-1-climb">Climb</div>
+                        <div class="btn" id="button-1-action1">Action 1</div>
+                    </div>
+                    <div>
+                        <p>Actor 2</p>
+                        <div class="btn" id="button-2-reset">Reset</div>
+                        <div class="btn" id="button-2-climb">Climb</div>
+                        <div class="btn" id="button-2-sleep">Sleep</div>
+                        <div class="btn" id="button-2-shift">Shift</div>
+                        <div class="btn" id="button-2-action1">Action 1</div>
+                        <div class="btn" id="button-2-action2">Action 2</div>
+                        <div class="btn" id="button-2-action3">Action 3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="application/javascript" src="js/library.js"></script>
+        <script type="application/javascript" src="js/shimeji.js"></script>
+        <script
+            type="application/javascript"
+            src="js/behaviors/randomSelector.js"
+        ></script>
+        <script
+            type="application/javascript"
+            src="js/actions/standardAction.js"
+        ></script>
+        <script type="application/javascript" src="js/site.js"></script>
+        <script>
+            window.addEventListener('load', function() {
+                var avatar1 = undefined;
+                var avatar2 = undefined;
+                // Load configuration
+                fetch('characters/hinata/_mascot.json')
+                    .then(response => response.json())
+                    .then(mascot => {
+                        console.log(mascot);
+                        avatar1 = createAvatar(mascot, 500, 500);
+                    });
+                $('button-1-reset').addEventListener('click', function() {
+                    avatar1.cancelAct();
+                    avatar1.place(400, 400);
+                    avatar1.act('fall', 40);
+                });
+                $('button-1-climb').addEventListener('click', function() {
+                    avatar1.act('climb', 1, false, false, false, function() {
+                        avatar1.cancelAct();
+                        avatar1.place(400, 400);
+                        avatar1.act('fall', 40);
+                    });
+                });
+                $('button-1-action1').addEventListener('click', function() {
+                    avatar1.act('action1', 1, false, false, false, function() {
+                        avatar1.place(400, 400);
+                        avatar1.act('fall', 40);
+                    });
+                });
+
+                fetch('characters/eevee/_mascot.json')
+                    .then(response => response.json())
+                    .then(mascot => {
+                        console.log(mascot);
+                        avatar2 = createAvatar(mascot, 200, 200);
+                    });
+                $('button-2-reset').addEventListener('click', function() {
+                    avatar2.cancelAct();
+                    avatar2.place(200, 200);
+                    avatar2.act('fall', 40);
+                });
+                $('button-2-climb').addEventListener('click', function() {
+                    avatar2.act('climb', 1, false, false, false, function() {
+                        avatar2.cancelAct();
+                        avatar2.place(400, 400);
+                        avatar2.act('fall', 40);
+                    });
+                });
+                $('button-2-sleep').addEventListener('click', function() {
+                    avatar2.act('sleep', 1);
+                });
+                $('button-2-shift').addEventListener('click', function() {
+                    avatar2.act('shift', 1);
+                });
+                $('button-2-action1').addEventListener('click', function() {
+                    avatar2.act('action1', 1);
+                });
+                $('button-2-action2').addEventListener('click', function() {
+                    avatar2.act('action2', 1);
+                });
+                $('button-2-action3').addEventListener('click', function() {
+                    avatar2.act('action3', 1);
+                });
+            });
+        </script>
+    </body>
+</html>
