@@ -49,7 +49,7 @@
                 var avatar1 = undefined;
                 var avatar2 = undefined;
                 // Load configuration
-                fetch('characters/hinata/_mascot.json')
+                fetch('characters/hinata/character.json')
                     .then(response => response.json())
                     .then(mascot => {
                         console.log(mascot);
@@ -74,7 +74,7 @@
                     });
                 });
 
-                fetch('characters/eevee/_mascot.json')
+                fetch('characters/eevee/character.json')
                     .then(response => response.json())
                     .then(mascot => {
                         console.log(mascot);
