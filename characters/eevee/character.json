@@ -298,7 +298,7 @@
                 "src": "frame14.png",
                 "anchor": [
                     132,
-                    162
+                    81
                 ],
                 "move": {
                     "x": 0,
@@ -310,7 +310,7 @@
                 "src": "frame14.png",
                 "anchor": [
                     132,
-                    162
+                    81
                 ],
                 "move": {
                     "x": 0,
@@ -322,7 +322,7 @@
                 "src": "frame12.png",
                 "anchor": [
                     132,
-                    162
+                    81
                 ],
                 "move": {
                     "x": 0,
@@ -334,19 +334,7 @@
                 "src": "frame13.png",
                 "anchor": [
                     132,
-                    162
-                ],
-                "move": {
-                    "x": 0,
-                    "y": -10
-                },
-                "duration": 200
-            },
-            {
-                "src": "frame13.png",
-                "anchor": [
-                    132,
-                    162
+                    81
                 ],
                 "move": {
                     "x": 0,
@@ -355,22 +343,10 @@
                 "duration": 800
             },
             {
-                "src": "frame13.png",
-                "anchor": [
-                    132,
-                    162
-                ],
-                "move": {
-                    "x": 0,
-                    "y": -20
-                },
-                "duration": 200
-            },
-            {
                 "src": "frame12.png",
                 "anchor": [
                     132,
-                    162
+                    81
                 ],
                 "move": {
                     "x": 0,
@@ -382,7 +358,7 @@
                 "src": "frame14.png",
                 "anchor": [
                     132,
-                    162
+                    81
                 ],
                 "move": {
                     "x": 0,
@@ -681,7 +657,8 @@
             "_states": [
                 "stand",
                 "sit",
-                "action1",
+                "action2",
+                "action3",
                 "walk_l",
                 "walk_r",
                 "sleep",
@@ -690,7 +667,7 @@
             "stand": {
                 "name": "stand",
                 "repeat": 1,
-                "prob": 0.3
+                "prob": 0.25
             },
             "sit": {
                 "name": "sit",
@@ -702,8 +679,13 @@
                 "repeat": 1,
                 "prob": 0.05
             },
-            "action1": {
-                "name": "action1",
+            "action2": {
+                "name": "action2",
+                "repeat": 1,
+                "prob": 0.05
+            },
+            "action3": {
+                "name": "action3",
                 "repeat": 1,
                 "prob": 0.05
             },
@@ -714,21 +696,22 @@
             },
             "walk_r": {
                 "name": "walk",
-                "repeat": 1,
+                "repeat": 3,
                 "revH": 1,
-                "prob": 0.25
+                "prob": 0.2
             },
             "fall": {
                 "name": "fall",
                 "repeat": 40,
-                "prob": 0.05
+                "prob": 0.1
             }
         },
         "exit_top_right": {
             "_states": [
                 "stand",
                 "sit",
-                "action1",
+                "action2",
+                "action3",
                 "walk_l",
                 "walk_r",
                 "sleep",
@@ -737,7 +720,7 @@
             "stand": {
                 "name": "stand",
                 "repeat": 1,
-                "prob": 0.3
+                "prob": 0.25
             },
             "sit": {
                 "name": "sit",
@@ -749,26 +732,31 @@
                 "repeat": 1,
                 "prob": 0.05
             },
-            "action1": {
-                "name": "action1",
+            "action2": {
+                "name": "action2",
+                "repeat": 1,
+                "prob": 0.05
+            },
+            "action3": {
+                "name": "action3",
                 "repeat": 1,
                 "prob": 0.05
             },
             "walk_l": {
                 "name": "walk",
-                "repeat": 1,
+                "repeat": 3,
                 "prob": 0.2
             },
             "walk_r": {
                 "name": "walk",
                 "repeat": 1,
                 "revH": 1,
-                "prob": 0.25
+                "prob": 0.2
             },
             "fall": {
                 "name": "fall",
                 "repeat": 40,
-                "prob": 0.05
+                "prob": 0.2
             }
         },
         "exit_bottom_right": {
@@ -776,6 +764,8 @@
                 "stand",
                 "sit",
                 "action1",
+                "action2",
+                "action3",
                 "walk_l",
                 "walk_r",
                 "sleep",
@@ -784,7 +774,7 @@
             "stand": {
                 "name": "stand",
                 "repeat": 1,
-                "prob": 0.3
+                "prob": 0.2
             },
             "sit": {
                 "name": "sit",
@@ -801,16 +791,26 @@
                 "repeat": 1,
                 "prob": 0.1
             },
+            "action2": {
+                "name": "action2",
+                "repeat": 1,
+                "prob": 0.1
+            },
+            "action3": {
+                "name": "action3",
+                "repeat": 1,
+                "prob": 0.1
+            },
             "walk_l": {
                 "name": "walk",
-                "repeat": 1,
-                "prob": 0.25
+                "repeat": 2,
+                "prob": 0.2
             },
             "walk_r": {
                 "name": "walk",
-                "repeat": 1,
+                "repeat": 2,
                 "revH": 1,
-                "prob": 0.25
+                "prob": 0.2
             }
         },
         "exit_bottom_left": {
@@ -818,6 +818,8 @@
                 "stand",
                 "sit",
                 "action1",
+                "action2",
+                "action3",
                 "walk_l",
                 "walk_r",
                 "sleep",
@@ -826,11 +828,11 @@
             "stand": {
                 "name": "stand",
                 "repeat": 1,
-                "prob": 0.3
+                "prob": 0.2
             },
             "sit": {
                 "name": "sit",
-                "repeat": 1,
+                "repeat": 3,
                 "prob": 0.1
             },
             "sleep": {
@@ -841,18 +843,28 @@
             "action1": {
                 "name": "action1",
                 "repeat": 1,
+                "prob": 0.05
+            },
+            "action2": {
+                "name": "action2",
+                "repeat": 1,
+                "prob": 0.1
+            },
+            "action3": {
+                "name": "action3",
+                "repeat": 1,
                 "prob": 0.1
             },
             "walk_l": {
                 "name": "walk",
-                "repeat": 1,
-                "prob": 0.25
+                "repeat": 2,
+                "prob": 0.2
             },
             "walk_r": {
                 "name": "walk",
-                "repeat": 1,
+                "repeat": 2,
                 "revH": 1,
-                "prob": 0.25
+                "prob": 0.2
             }
         },
         "randomActions_right": {

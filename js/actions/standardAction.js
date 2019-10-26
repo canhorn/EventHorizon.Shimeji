@@ -41,6 +41,7 @@ Actions.standard = avatar => (what, environment) => {
             Math.abs(avatar._x - environment.left) <
             Math.abs(avatar._x - environment.right)
         ) {
+            console.log('exit_top_left');
             // From Left Edge
             avatar.place(avatar._x, environment.top + 1);
             avatar.cancelAct();
@@ -58,6 +59,7 @@ Actions.standard = avatar => (what, environment) => {
                 }
             });
         } else {
+            console.log('exit_top_right');
             // From Right Edge
             avatar.place(avatar._x, environment.top + 1);
             avatar.cancelAct();
@@ -80,6 +82,7 @@ Actions.standard = avatar => (what, environment) => {
             Math.abs(avatar._x - environment.left) <
             Math.abs(avatar._x - environment.right)
         ) {
+            console.log('exit_bottom_left');
             // From Left Edge
             avatar.place(avatar._x, environment.bottom - 1);
             avatar.cancelAct();
@@ -106,6 +109,7 @@ Actions.standard = avatar => (what, environment) => {
                 }
             });
         } else {
+            console.log('exit_bottom_right');
             // From Right Edge
             avatar.place(avatar._x, environment.bottom - 1);
             avatar.cancelAct();
@@ -134,6 +138,4 @@ Actions.standard = avatar => (what, environment) => {
         }
     }
     console.log(['END: ', what, environment, 'Yo!']);
-    // avatar.behavior('zbox', run(avatar));
-    // avatar.act('fall', 40);
 };
