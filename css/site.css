@@ -1,3 +1,4 @@
+/* 1920x1080 */
 * {
     font-family: sans-serif;
     color: #fff;
@@ -19,7 +20,6 @@ div.btn.on {
     background-color: #88d;
     color: #000;
 }
-
 #zbox.home {
     position: fixed;
     top: 100px;
@@ -32,11 +32,12 @@ div.btn.on {
 
 #zbox.full {
     position: fixed;
-    top: 0px;
+    top: 150px;
     left: 0px;
+    height: calc(100% - 150px);
     width: 100%;
-    height: 100%;
     overflow: hidden;
+    border-top: rgba(255, 255, 255, 0.2) 1px solid;
 }
 
 .actor-controls-box {

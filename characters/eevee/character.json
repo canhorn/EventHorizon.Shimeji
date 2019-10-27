@@ -759,6 +759,17 @@
                 "prob": 0.2
             }
         },
+        "exit_bottom_right_test": {
+            "_states": [
+                "walk_r"
+            ],
+            "walk_r": {
+                "name": "walk",
+                "repeat": 2,
+                "revH": 1,
+                "prob": 1
+            }
+        },
         "exit_bottom_right": {
             "_states": [
                 "stand",
@@ -768,8 +779,7 @@
                 "action3",
                 "walk_l",
                 "walk_r",
-                "sleep",
-                "fall"
+                "sleep"
             ],
             "stand": {
                 "name": "stand",
@@ -813,6 +823,16 @@
                 "prob": 0.2
             }
         },
+        "exit_bottom_left_test": {
+            "_states": [
+                "walk_l"
+            ],
+            "walk_l": {
+                "name": "walk",
+                "repeat": 2,
+                "prob": 1
+            }
+        },
         "exit_bottom_left": {
             "_states": [
                 "stand",
@@ -822,8 +842,7 @@
                 "action3",
                 "walk_l",
                 "walk_r",
-                "sleep",
-                "fall"
+                "sleep"
             ],
             "stand": {
                 "name": "stand",
